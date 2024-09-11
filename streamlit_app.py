@@ -8,7 +8,6 @@ import os
 st.write("TEST")
 # Gunakan os.path.join() untuk menggabungkan direktori dan file model pickle
 model_path = os.path.join('rf_diabetes_model.pkl')
-#model_path_2 = os.path.join('Model/knn_dt_diabetes_model.pkl')
 # Periksa apakah file ada di direktori yang ditentukan
 if os.path.exists(model_path):
     try:
@@ -17,14 +16,10 @@ if os.path.exists(model_path):
         with open(model_path, 'rb') as f:
             loaded_model = pickle.load(f)
         
-        # with open(model_path_2,'rb') as file:
-        #     load_model_2 = pickle.load(file)
             
         rf_model = loaded_model[0]
-        # knn_model = load_model_2[0]
-        # dt_model = load_model_2[1]
         
-       
+        st.write("TEST")
         #bagian Streamlit App
         st.title("Prediksi Diabetes")
        
