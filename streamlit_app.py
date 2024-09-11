@@ -13,11 +13,11 @@ if os.path.exists(model_path):
     try:
         st.write("TEST 2")
         #muat model dari file pickle
-        with open(model_path, 'rb') as f:
-            loaded_model = pickle.load(f)
+        #with open(model_path, 'rb') as f:
+            #loaded_model = pickle.load(f)
         
         st.write("TEST 3")   
-        rf_model = loaded_model[0]
+        #rf_model = loaded_model[0]
         
         st.write("TEST 4")
         #bagian Streamlit App
