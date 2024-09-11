@@ -5,13 +5,14 @@ import os
 
 
 #load model
-
+st.write("TEST")
 # Gunakan os.path.join() untuk menggabungkan direktori dan file model pickle
 model_path = os.path.join('rf_diabetes_model.pkl')
 #model_path_2 = os.path.join('Model/knn_dt_diabetes_model.pkl')
 # Periksa apakah file ada di direktori yang ditentukan
 if os.path.exists(model_path):
     try:
+        st.write("TEST")
         #muat model dari file pickle
         with open(model_path, 'rb') as f:
             loaded_model = pickle.load(f)
