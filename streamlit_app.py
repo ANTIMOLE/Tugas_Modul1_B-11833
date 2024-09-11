@@ -5,21 +5,21 @@ import os
 
 
 #load model
-st.write("TEST")
+st.write("TEST 1")
 # Gunakan os.path.join() untuk menggabungkan direktori dan file model pickle
 model_path = os.path.join('rf_diabetes_model.pkl')
 # Periksa apakah file ada di direktori yang ditentukan
 if os.path.exists(model_path):
     try:
-        st.write("TEST")
+        st.write("TEST 2")
         #muat model dari file pickle
         with open(model_path, 'rb') as f:
             loaded_model = pickle.load(f)
         
-        st.write("TEST")   
+        st.write("TEST 3")   
         rf_model = loaded_model[0]
         
-        st.write("TEST")
+        st.write("TEST 4")
         #bagian Streamlit App
         st.title("Prediksi Diabetes")
        
